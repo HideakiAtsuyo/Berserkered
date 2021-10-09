@@ -32,7 +32,7 @@ namespace Berserker_Deobfuscator
             Process process = Process.Start(proc);
             process.Start();
             process.WaitForExit();
-
+            File.Delete(output1);
             using (StreamReader reader = process.StandardOutput)
             {
                 string err = process.StandardError.ReadToEnd();
@@ -42,7 +42,6 @@ namespace Berserker_Deobfuscator
                     Console.ReadLine();
                     Environment.Exit(1337);
                 }
-                File.Delete(output1);
                 Console.WriteLine("Oofed !");
                 Console.ReadLine();
             }
