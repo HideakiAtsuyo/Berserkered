@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -7,10 +7,8 @@ namespace Berserker_Deobfuscator
 {
     class Program
     {
-        [STAThread]
         static void Main(string[] args)
         {
-
             Console.Write("Obfuscated Python File Path: ");
             string file = Console.ReadLine().Replace("\"", string.Empty);
             Oof.FileExist(file);
