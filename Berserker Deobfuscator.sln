@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Berserker Deobfuscator", "Berserker Deobfuscator\Berserker Deobfuscator.csproj", "{C49504AB-2F04-4E30-984D-93D4ED164D4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C49504AB-2F04-4E30-984D-93D4ED164D4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C49504AB-2F04-4E30-984D-93D4ED164D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C49504AB-2F04-4E30-984D-93D4ED164D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C49504AB-2F04-4E30-984D-93D4ED164D4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72957EC0-D803-4D9C-941B-207247F1A111}
+	EndGlobalSection
+EndGlobal
