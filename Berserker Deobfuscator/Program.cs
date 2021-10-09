@@ -25,17 +25,27 @@ namespace Berserker_Deobfuscator
                 Arguments = output1,
                 UseShellExecute = false,
                 CreateNoWindow = true,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
                 LoadUserProfile = true
             };
-
             Process process = Process.Start(proc);
             process.Start();
             process.WaitForExit();
 
-            File.Delete(output1);
-            File.Delete(output1.Replace("Berserkered", "Oofed"));
-            Console.WriteLine("Oofed !");
-            Console.ReadLine();
+            using (StreamReader reader = process.StandardOutput)
+            {
+                string err = process.StandardError.ReadToEnd();
+                if (err.Length > 0)
+                {
+                    Console.WriteLine(String.Format("Error:\n{0}", err));
+                    Console.ReadLine();
+                    Environment.Exit(1337);
+                }
+                File.Delete(output1);
+                Console.WriteLine("Oofed !");
+                Console.ReadLine();
+            }
         }
     }
 }
